@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUASENSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">AQUASENSE</a>
+
+            <div class="profile-menu" onclick="toggleProfileDropdown()">
+                <i class="fas fa-user-circle"></i>
+                <ul class="dropdown" id="profileDropdown">
+                    <li><span id="username">Username</span></li>
+                    <li><span id="phone">XXXXX XXXXX</span></li>
+                    <hr class="dropdown-divider">
+                    <li><button class="logout" onclick="logout()">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard" id="dashboard">
+        <section class="user-grid">
+            <div class="user-block">
+                <h3>User 1</h3>
+                <p>Water Used: <span>250 L</span></p>
+                <button class="status-button no-leak">No Leak</button>
+            </div>
+            <div class="user-block">
+                <h3>User 2</h3>
+                <p>Water Used: <span>300 L</span></p>
+                <button class="status-button no-leak">No Leak</button>
+            </div>
+            <div class="user-block">
+                <h3>User 3</h3>
+                <p>Water Used: <span>150 L</span></p>
+                <button class="status-button no-leak">No Leak</button>
+            </div>
+            <div class="user-block">
+                <h3>User 4</h3>
+                <p>Water Used: <span>400 L</span></p>
+                <button class="status-button no-leak">No Leak</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
